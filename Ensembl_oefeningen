@@ -1,0 +1,2 @@
+Question 12
+curl 'http://rest.ensembl.org/variation/zebrafish/rs499899635?' -H 'Content-type:application/json'

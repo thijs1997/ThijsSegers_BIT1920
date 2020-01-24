@@ -1,0 +1,14 @@
+UNF group the data together
+(personnel number,Name,  Date of birth, lab code, lab name,research code, research description, research dicription, research supervisor)
+
+1NF looking if there are no repeating groups, there are non repeating groups
+(personnel number,Name,  Date of birth, lab code, lab name,research code, research description, research dicription, research supervisor)
+
+2NF eliminate partial key dependencies. name and date birth only are depend on personnel number
+(personnel number, name, date of birth) 
+(peronnel number, lab code, lab name, research code, research discription, reseach supervisor)
+
+3NF  check whether all non-key attributes are not dependent on another non-key attribute. lab name  on depend on lab code and research discription and research supervisior only depend on research code.
+(personnel number, name, date of birth)
+(personnel number, lab code, lab name, research code)
+(research code, research discription, research supervisior, personnel number)
